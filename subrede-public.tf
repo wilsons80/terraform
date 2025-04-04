@@ -7,7 +7,7 @@ resource "aws_subnet" "comunidadedevops-subnet-pubilc-1a" {
   tags = merge(
     local.tags,
     {
-      Name                     = "comunidadedevops-subnet-pubilc-1a",
+      Name                     = "${var.project_name}-subnet-pubilc-1a",
       "Kubernetes.io/role/elb" = 1
     }
   )
@@ -22,7 +22,7 @@ resource "aws_subnet" "comunidadedevops-subnet-pubilc-1b" {
   tags = merge(
     local.tags,
     {
-      Name                     = "comunidadedevops-subnet-pubilc-1b",
+      Name                     = "${var.project_name}-subnet-pubilc-1b",
       "Kubernetes.io/role/elb" = 1
     }
   )
