@@ -34,3 +34,9 @@ module "eks_managed_node_group" {
   cluster_name      = module.eks_cluster.cluster_name
 }
 
+
+module "eks_aws_load_balancer-controller" {
+  source       = "./modules/aws-load-balancer-controller"
+  project_name = var.project_name
+  tags         = module.eks_communs.tags
+}
