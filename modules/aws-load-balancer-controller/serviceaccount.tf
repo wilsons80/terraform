@@ -1,4 +1,3 @@
-/*
 resource "kubernetes_service_account" "eks_controller_service_account" {
   metadata {
     name      = "aws-load-balancer-controller"
@@ -8,4 +7,3 @@ resource "kubernetes_service_account" "eks_controller_service_account" {
     }
   }
 }
-*/
