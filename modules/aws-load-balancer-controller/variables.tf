@@ -7,3 +7,9 @@ variable "tags" {
   type        = map(any)
   description = "Tags para ser usada nos recursos da AWS"
 }
+
+
+variable "oidc" {
+  type        = string
+  description = "URL da OIDC"
+}

@@ -24,7 +24,6 @@ module "eks_cluster" {
 
 }
 
-
 module "eks_managed_node_group" {
   source            = "./modules/managed-node-group"
   project_name      = var.project_name
@@ -39,4 +38,5 @@ module "eks_aws_load_balancer-controller" {
   source       = "./modules/aws-load-balancer-controller"
   project_name = var.project_name
   tags         = module.eks_communs.tags
+  oidc         = module.eks_cluster.oidc
 }

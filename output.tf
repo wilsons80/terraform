@@ -21,6 +21,11 @@ output "vpc_config" {
 }
 
 
-output "oidc" {
+output "oidc_cluster" {
   value = module.eks_cluster.oidc_cluster
+}
+
+
+output "oidc" {
+  value = module.eks_cluster.oidc
 }
