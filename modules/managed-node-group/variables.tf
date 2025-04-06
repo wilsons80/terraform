@@ -8,11 +8,18 @@ variable "tags" {
   description = "Tags para ser usada nos recursos da AWS"
 }
 
-variable "public_subnet_1a" {
+
+variable "cluster_name" {
   type        = string
-  description = "Nome da subnet public AZ 1a"
+  description = "Nome do cluster"
 }
-variable "public_subnet_1b" {
+
+variable "subnet_private_1a" {
   type        = string
-  description = "Nome da subnet public AZ 1b"
+  description = "Nome da subnet private 1a"
+}
+
+variable "subnet_private_1b" {
+  type        = string
+  description = "Nome da subnet private 1b"
 }
